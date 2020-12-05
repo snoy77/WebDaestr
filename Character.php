@@ -37,7 +37,7 @@
 					 		echo "</div>
 					 		<div class='menu_stroka' style='width: 1500px''>";
 					 	}
-					 	echo "<a class='menu_element' style='height: 440px; width: 280px;'>
+					 	echo "<a class='menu_middle_element'>
 					 	<img src='assets/image/index/Персонажи.jpg'>
 
 						<div class='black_fon'></div>

@@ -1,15 +1,36 @@
-.menu_element{
+/*Для больших карточек*/
+.menu_big_element{
 	overflow: hidden;
 	position: relative;
+	width: 340px; 
+	height: 500px;
 }
-.menu_element img{
+.menu_big_element img{
 	object-fit: cover;
 	height: 100%;
 }
-.menu_element:hover .black_fon{
+.menu_big_element:hover .black_fon{
 	height: 100%;
 }
-.menu_element:hover .element_center_text{
+.menu_big_element:hover .element_center_text{
+	opacity: 1;
+	transition: 1s;
+}
+/*Для средних карточек*/
+.menu_middle_element{
+	overflow: hidden;
+	position: relative;
+	height: 440px;
+	width: 280px;
+}
+.menu_middle_element img{
+	object-fit: cover;
+	height: 100%;
+}
+.menu_middle_element:hover .black_fon{
+	height: 100%;
+}
+.menu_middle_element:hover .element_center_text{
 	opacity: 1;
 	transition: 1s;
 }
