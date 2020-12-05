@@ -1,0 +1,29 @@
+php
+				$mysqli = new mysqli(127.0.0.1, root, , daestr);#подключение к БД
+
+				if ($mysqli-connect_errno) {#проверочка на ошибку подключения
+   					echo Не удалось подключиться к MySQL ( . $mysqli-connect_errno . )  . $mysqli-connect_error;
+   				}
+
+
+   				echo table border='1' 
+					tr
+						thИмяth
+						thОписаниеth
+						thСпециализацияth
+				
+					tr;
+   				$result = $mysqli-query(SELECT  FROM mycharacter);
+   				$rows = mysqli_num_rows($result);
+
+   				for ($i = 0 ; $i  $rows ; ++$i)
+    			{
+       				$row = mysqli_fetch_row($result);
+        			echo tr;
+            		for ($j = 0 ; $j  5 ; ++$j) echo th$row[$j]th;
+        				echo tr;
+    			}
+    			echo table;
+
+
+				

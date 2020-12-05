@@ -1,0 +1,69 @@
+.menu_element{
+	overflow: hidden;
+	position: relative;
+}
+.menu_element img{
+	object-fit: cover;
+	height: 100%;
+}
+.menu_element:hover .black_fon{
+	height: 100%;
+}
+.menu_element:hover .element_center_text{
+	opacity: 1;
+	transition: 1s;
+}
+
+/*Общее*/
+.black_fon{
+	position: absolute;
+	top: 0;
+	z-index: 1000;
+
+	width: 100%;
+	height: 20%;
+
+	opacity: 0.67;
+
+	display: block;
+	background-color: black;
+
+	transition: 0.5s;
+}
+.element_title{
+	position: absolute;
+	top: 0;
+	z-index: 1100;
+
+	width: 100%;
+	height: 20%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 400;
+	font-size: 30px;
+	color: white;
+}
+.element_center_text{
+	position: absolute;
+	top: 0;
+
+	opacity: 0;
+
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 30px;
+	color: white;
+	z-index: 1100;
+}
