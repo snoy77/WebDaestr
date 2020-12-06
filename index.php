@@ -2,13 +2,11 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="assets/css/common_style.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/index_style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/Elements_style.css">
 
 	<title>Другая сторона</title>
 </head>
 <body style="background-image: url(assets/image/background.jpg);">
-	<div class="container">
 		<div class="center_container">
 			<div class="metitle">
 				Книга
@@ -72,7 +70,7 @@
 					</a>
 				</div>
 			</div>
-		</div>
+
 	</div>
 </body>
 </html>

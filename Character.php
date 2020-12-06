@@ -3,12 +3,10 @@
 <head>
 	<title>Даэстр: персонажи</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/common_style.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/index_style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/Elements_style.css">
 </head>
 <body style="background-image: url(assets/image/background.jpg);">
-	<div class="container" style="max-width: 1500px">
-		<div class="center_container">
+		<div class="center_container" style="width: 1500px;">
 			<div class="metitle">
 				Персонажи
 			</div>
@@ -30,15 +28,15 @@
 					 #Посчитал количество записей
 					 $count_rows = mysqli_num_rows($data);
 
-					 echo "<div class='menu_stroka' style='width: 1500px'>";
+					 echo "<div class='menu_stroka'>";
 					 for($i = 0; $i < $count_rows; ++$i){
 					 	$row = mysqli_fetch_row($data);
 					 	if(($i % $NUMBER_OF_CARD) == 0){
 					 		echo "</div>
-					 		<div class='menu_stroka' style='width: 1500px''>";
+					 		<div class='menu_stroka'>";
 					 	}
 					 	echo "<a class='menu_middle_element'>
-					 	<img src='assets/image/index/Персонажи.jpg'>
+					 	<img src='assets/image/ПерсонажПросто.png'>
 
 						<div class='black_fon'></div>
 
@@ -52,6 +50,5 @@
 					 ?>
 			</div>
 		</div>
-	</div>
 </body>
 </html>
