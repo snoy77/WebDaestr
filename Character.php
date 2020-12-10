@@ -23,7 +23,7 @@
 					 }
 
 					 #получил все записи из таблицы "персонажи"
-					 $data = $mysqli->query("SELECT*FROM mycharacter");
+					 $data = $mysqli->query("SELECT name, MiniDiscription, ImgName FROM mycharacter");
 
 					 #Посчитал количество записей
 					 $count_rows = mysqli_num_rows($data);
@@ -36,12 +36,12 @@
 					 		<div class='menu_stroka'>";
 					 	}
 					 	echo "<a class='menu_middle_element'>
-					 	<img src='assets/image/ПерсонажПросто.png'>
+					 	<img src='assets/image/character/$row[2]'>
 
 						<div class='black_fon'></div>
 
-						<div class='element_title'>$row[1]</div>
-						<div class='element_center_text'>$row[3]</div>
+						<div class='element_title'>$row[0]</div>
+						<div class='element_center_text'>$row[1]</div>
 						</a>";
 						if($i == $count_rows-1){
 							echo "</div>";
